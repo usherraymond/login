@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+body{
+    background:linear-gradient(rgba(22,4,6,0.2),rgba(107, 20, 30, 0.4), rgba(24, 135, 102, 0.7));
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 150px;
+    box-shadow: 0 0 10px rgba(24, 135, 102, 0.25),
+                0 0 50px rgba(24, 135, 102, 0.5),
+                0 0 80px rgba(24,135,102,0.75),
+                0 0 100px rgba(24,135,102,1);
+}
+.container{
+    visibility: hidden;
+}
+.show{
+    visibility: visible;
+}
+form{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(66, 101, 151);
+    display: grid;
+    grid-template-columns: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 4px solid white;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(34,8,4,0.3), rgba(36,4,6,0.1)) , url(image/city1.jpeg);
+}
+label{
+    color: gold;
+    font-style: italic;
+    text-decoration: underline 4px solid blue;
+}
+label span{
+    color: red;
+    font-style: oblique;
+    font-weight: 1000;
+}
+input{
+    width: 130px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-gap:6px;
+}
+select{
+    width: 50px;
+}
+button{
+    padding: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: peru;
+}
+.big-button{
+    margin-left: 40px;
+}
